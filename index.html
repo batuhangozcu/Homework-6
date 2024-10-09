@@ -17,10 +17,14 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <body>
-    <div id="backdrop"></div>
+    <!-- <div id="backdrop"></div> -->
     <header class="header">
       <div class="container">
         <a class="logo" href="#"><span>WEB</span>STUDIO</a>
@@ -76,10 +80,60 @@
             <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
           </ul>
         </address>
+        <svg class="menu-ico" viewBox="0 0 32 32">
+          <use href="images/icons.svg#icon-menu"></use>
+        </svg>
       </div>
     </header>
     <main>
-      <div class="form">
+      <div class="menu">
+        <svg class="menu-close" viewBox="0 0 32 32">
+          <use href="images/icons.svg#icon-close"></use>
+        </svg>
+        <nav class="menu-first-nav">
+          <ul class="menu-ul-nav">
+            <li>
+              <a class="menu-second-nav" href="#">Studio</a>
+            </li>
+            <li>
+              <a class="menu-second-nav" href="#">Portfolio</a>
+            </li>
+            <li>
+              <a class="menu-second-nav" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="menu-address">
+          <ul class="menu-nav-ul">
+            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+          </ul>
+        </address>
+        <ul class="menu-social">
+          <li class="social-icons">
+            <svg class="second-icons" viewBox="144 0 32 32">
+              <use href="images/icons.svg#icon-instagram"></use>
+            </svg>
+          </li>
+          <li class="social-icons">
+            <svg class="second-icons" viewBox="240 0 32 32">
+              <use href="images/icons.svg#icon-twitter"></use>
+            </svg>
+          </li>
+          <li class="social-icons">
+            <svg class="second-icons" viewBox="0 0 32 32">
+              <use href="images/icons.svg#icon-facebook"></use>
+            </svg>
+          </li>
+          <li class="social-icons">
+            <svg class="second-icons" viewBox="192 0 32 32">
+              <use href="images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <div class="form">
         <svg class="close" viewBox="0 0 32 32">
           <use href="images/icons.svg#icon-close"></use>
         </svg>
@@ -134,7 +188,7 @@
         </div>
         <br />
         <button type="submit" class="send-button">Send</button>
-      </div>
+      </div> -->
       <section class="section-one">
         <div class="container">
           <h1 class="main-h">Effective Solutions for Your Business</h1>

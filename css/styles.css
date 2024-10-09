@@ -297,7 +297,7 @@ footer .container {
   letter-spacing: 2%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 .section-one {
@@ -596,11 +596,10 @@ input::placeholder {
 }
 
 .footer-sub {
-display: flex;
-align-items: flex-end;
-gap: 16px;
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
 }
-
 
 .sub-label {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -634,7 +633,7 @@ gap: 16px;
   letter-spacing: 4%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    padding-left: 15px;
+  padding-left: 15px;
 }
 
 .sub-button {
@@ -651,4 +650,204 @@ gap: 16px;
 
 label {
   padding-bottom: 5px;
+}
+
+.menu {
+  display: none;
+}
+
+.menu-ico {
+  display: none;
+}
+
+/* for tablet */
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+  .nav-ul {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .page-menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 768px;
+    justify-content: center;
+  }
+
+  .our-team {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 768px;
+    justify-content: center;
+  }
+  .title-three {
+    max-width: 768px;
+  }
+  .our-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 768px;
+    justify-content: center;
+  }
+
+  .page-titles {
+    max-width: 768px;
+  }
+
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 768px;
+    justify-content: center;
+  }
+}
+/* for mobile */
+@media screen and (max-width: 768px) {
+  .nav-ul {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .page-menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 320px;
+    justify-content: center;
+  }
+
+  .our-team {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 320px;
+    justify-content: center;
+  }
+  .title-three {
+    max-width: 320px;
+  }
+  .our-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 320px;
+    justify-content: center;
+  }
+
+  .page-titles {
+    max-width: 320px;
+  }
+
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 320px;
+    justify-content: center;
+  }
+
+  .social-title {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .footer-sub {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sub-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .first-nav,
+  .address {
+    display: none;
+  }
+
+  .menu-ico {
+    display: flex;
+    width: 24px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-close {
+    width: 24px;
+    --color1: white;
+    padding: 25px 25px 0 0;
+    display: flex;
+    align-self: end;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    cursor: pointer;
+  }
+
+  .menu-close:hover {
+    --color1: #e7e9fc;
+  }
+
+  .menu-second-nav {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #2e2f42;
+    padding-left: 20px;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+  }
+
+  .menu-second-nav:hover {
+    color: #404bbf;
+    cursor: pointer;
+  }
+
+  .menu-nav-ul a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #434455;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+  }
+
+  .menu-nav-ul {
+    padding: 150px 0 0 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+  }
+
+  .menu-nav-ul a:hover {
+    color: #4d5ae5;
+    cursor: pointer;
+  }
+
+  .menu-social {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding: 60px 0 40px 0;
+  }
 }
