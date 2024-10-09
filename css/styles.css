@@ -699,6 +699,10 @@ label {
     max-width: 768px;
     justify-content: center;
   }
+
+  .container {
+    width: fit-content;
+  }
 }
 /* for mobile */
 @media screen and (max-width: 768px) {
@@ -849,5 +853,8 @@ label {
     gap: 40px;
     justify-content: center;
     padding: 60px 0 40px 0;
+  }
+  .container {
+    width: fit-content;
   }
 }
